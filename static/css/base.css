@@ -93,3 +93,10 @@
 
 
 
+
+  .navbar-scrolled {
+    background-color: #ffffff; /* Specify the color you want */
+    color: #090909;
+    transition: background-color 0.3s ease; /* Add a smooth transition effect */
+    
+  }

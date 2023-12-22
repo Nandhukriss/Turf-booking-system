@@ -10,63 +10,45 @@
     
     }
 </style>
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Turf Booking</title>
-</head>
-<body>
+    <!-- Form For Booking  -->
+
+        <div class="container mt-5 ">
+            <h1 class="display-5 mb-5 mt-5 text-center ">Turf Booking For Tournament(for a Day)</h1>
+            {% if  message %}
+            <div class="alert alert-danger text-center  alert-dismissible" role="alert">
+                {{message}}
+                <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+              </div>
+              {% endif %}
+            {% if  success %}
+            <div class="alert alert-success text-center  alert-dismissible" role="alert">
+                {{success}}
+                <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+              </div>
+              {% endif %}
     
-    <h1 class="display-5 mb-5 text-center">Turf Booking For Tournament(for a Day)</h1>
-      <div class="container">
-        {% if  message %}
-        <div class="alert alert-danger text-center  alert-dismissible" role="alert">
-            {{message}}
-            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
-          </div>
-          {% endif %}
-        {% if  success %}
-        <div class="alert alert-success text-center  alert-dismissible" role="alert">
-            {{success}}
-            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
-          </div>
-          {% endif %}
-
-          <form method="post" class="text-center mt-3 ">
-              {% csrf_token %}
-              {{ form|crispy}}
-              <input type="submit" class="btn btn-outline-success w-100" value="Book">
-          </form>
-
-      </div>
-
-
-      <div class="container mb-4">
-        <h2 class="display-6 mb-3">Already Booked Dates</h2>
-
-        <ol class="list-group list-group-numbered">
-            {% for booked in already_booked %}
-            <li class="list-group-item d-flex justify-content-between align-items-start">
-                <div class="ms-2 me-auto">
-                    <div class="fw-bold">On {{booked.date}}</div>
-                    Booked by {{booked.user}}
-                </div>
-                <span class="badge bg-success rounded-pill"><i class="fa-solid fa-check"></i></span>
-            </li>
-            {% endfor %}
-          </ol>
-    </div>
+              <form method="post" class="text-center mt-3 ">
+                  {% csrf_token %}
+                  {{ form|crispy}}
+                  <input type="submit" class="btn btn-outline-success w-100" value="Book">
+              </form>
     
-
-
-
-
-
-
-</body>
-</html>
-
-
+          </div>
+    
+          <!-- Already booked Dates  -->
+    
+          <div class="container mb-4">
+            <h2 class="display-6 mb-3">Already Booked Dates</h2>
+            <ol class="list-group list-group-numbered">
+                {% for booked in already_booked %}
+                <li class="list-group-item d-flex justify-content-between align-items-start">
+                    <div class="ms-2 me-auto">
+                        <div class="fw-bold">On {{booked.date}}</div>
+                        Booked by {{booked.user}}
+                    </div>
+                    <span class="badge bg-success rounded-pill"><i class="fa-solid fa-check"></i></span>
+                </li>
+                {% endfor %}
+              </ol>
+        </div>        
 {% endblock conent %}

@@ -2,9 +2,10 @@ from django.shortcuts import render,get_object_or_404,redirect
 from .models import  Booking
 from .forms import BookingForm
 # Create your views here.
+
 def index(request):
-    
     return render(request,'index.html')
+
 def booking(request):
     already_booked=Booking.objects.filter(booked=True)
     if request.method == 'POST':
@@ -18,7 +19,7 @@ def booking(request):
 
             if existing_booking:
                 form = BookingForm()
-                # If already booked, handle the error (e.g., show a message to the user)
+                # If already booked
                 return render(request, 'Booking.html', {'message': 'This date  has already been booked.','form':form,'already_booked':already_booked})
             else:
                 # If not booked, save the new booking
@@ -27,7 +28,7 @@ def booking(request):
                 booking.save()
                 date=booking.date
 
-                # Redirect or show a success message
+       
                 return render(request, 'Booking.html', {'success': f'Turf Booked On {date}.','form':form,'already_booked':already_booked})
     else:
         form = BookingForm()
