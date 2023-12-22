@@ -1,0 +1,122 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block conent %}
+<!-- home section  -->
+<link rel="stylesheet" href="{% static 'css/index.css' %}">
+
+<section class="home-banner">
+    <div class="banner-bg" style="background-image: url('http://score.marwah.in/Content/DesignContent/images/Website_slider-(1).png');background-size: cover;background-repeat: no-repeat;">
+
+        <div class="container-fluid h-100">
+            <div class=" d-flex justify-content-center h-100 align-items-center flex-column ">
+
+                <a href="{% url 'booking' %}" class="btn btn-dark rounded-3 fs-5 shadow-lg border border-2 ">Book Now</a>
+                <p class=" fs-3 text-light fw-bold  ">Meet Your Pals Over Game !!!</p>
+ 
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<section class="gallery container " id="gallery">
+
+    <!-- Gallery -->
+    <div class="row">
+  <h1 class="display-3 text-center hidden">Gallery</h1>
+    <div class="col-lg-4 col-md-12 mb-4 mb-lg-0">
+      <img
+        src="http://score.marwah.in/Content/DesignContent/images/IMG_20180811_154136.jpg"
+        class="w-100 shadow-1-strong rounded mb-4"
+        alt="Boat on Calm Water"
+      />
+  
+      <img
+        src="http://score.marwah.in/Content/DesignContent/images/cricket_3.jpg"
+        class="w-100 shadow-1-strong rounded mb-4"
+        alt="Wintry Mountain Landscape"
+      />
+    </div>
+  
+    <div class="col-lg-4 mb-4 mb-lg-0">
+      <img
+        src="https://th.bing.com/th/id/R.bcff36055ec38f1c1253a58a3577baec?rik=8zsbANJPaoxdhw&pid=ImgRaw&r=0"
+        class="w-100 shadow-1-strong rounded mb-4"
+        alt="Mountains in the Clouds"
+      />
+  
+      <img
+        src="https://media-cdn.tripadvisor.com/media/photo-s/14/4c/fe/a3/jack-edwards-reserve.jpg"
+        class="w-100 shadow-1-strong rounded mb-4"
+        alt="Boat on Calm Water"
+      />
+    </div>
+  
+    <div class="col-lg-4 mb-4 mb-lg-0">
+      <img
+        src="https://th.bing.com/th/id/R.47336b4bdcbb8db6db2912865b3b617f?rik=RfRHmYF5Y9m5sw&pid=ImgRaw&r=0"
+        class="w-100 shadow-1-strong rounded mb-4"
+        alt="Waves at Sea"
+      />
+  
+      <img
+        src="https://media-cdn.tripadvisor.com/media/photo-s/14/4c/fe/9f/jack-edwards-reserve.jpg"
+        class="w-100 shadow-1-strong rounded mb-4"
+        alt="Yosemite National Park"
+      />
+    </div>
+  </div>
+  <!-- Gallery -->
+</section>
+
+<section class="questions container-fluid my-2" id="faq">
+    <h1 class="display-3 text-center hidden">FAQ's</h1>
+    <section class="two-players d-flex  justify-content-center  align-items-center ">
+        <img src="https://www.playspots.in/wp-content/uploads/2020/02/meet-pals.png" alt="players">
+    </section>
+
+    <div class="accordion  " id="accordionExample">
+        <div class="accordion-item ">
+          <h2 class="accordion-header">
+            <button class="accordion-button bg-success text-light " type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+            #1 Can I hold a tournament at your turf?
+            </button>
+          </h2>
+          <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+                Yes. We absolutely love it when people fight! We mean, for the trophy. Physical fights are for the Fight Club! Ouch, did we just break Rule no. 1? Ok, please get in touch with us to avail of our tournament organising services.
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item ">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed bg-success text-light " type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+              #2 Can I eat/drink on the turf?
+            </button>
+          </h2>
+          <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+                Hey, we love food too! And we go to the pub for that. Not to the turf.
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item ">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed bg-success text-light " type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+              #3 Can we play with season ball?
+            </button>
+          </h2>
+          <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              <strong>No. Please, just no! Tennis balls only.
+            </div>
+          </div>
+        </div>
+      </div>
+</section>
+
+
+<!-- home section end   -->
+
+{% endblock conent %}
