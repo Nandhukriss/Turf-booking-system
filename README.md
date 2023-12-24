@@ -1,5 +1,21 @@
 # Turf Booking System
 
+## Home Page-Gallery 
+
+![turf1](https://github.com/Nandhukriss/Turf-booking-system/assets/103727372/3008c4e6-a6c6-466f-a8b8-8443cc6aa398)
+
+## Home Page-FAQ 
+
+![turf2](https://github.com/Nandhukriss/Turf-booking-system/assets/103727372/5002da32-5656-4a52-8b26-019aba28a122)
+
+## Home Page 
+![turf3](https://github.com/Nandhukriss/Turf-booking-system/assets/103727372/879ab8ef-af93-4740-82c8-65796e73dd07)
+
+## Booking Success 
+![bookingpage1](https://github.com/Nandhukriss/Turf-booking-system/assets/103727372/a61fd066-3883-46ff-9e59-6a89d5933add)
+
+## Booking Failure 
+![bookingpage2](https://github.com/Nandhukriss/Turf-booking-system/assets/103727372/d1f76cf6-c437-415b-9a77-c61142f1f452)
 
 ## Installation
 
@@ -58,21 +74,3 @@
     ```
 
 Visit [http://127.0.0.1:8000/](http://127.0.0.1:8000/) in your web browser to access the Django development server.
-
-
-## Home Page-Gallery 
-
-![turf1](https://github.com/Nandhukriss/Turf-booking-system/assets/103727372/3008c4e6-a6c6-466f-a8b8-8443cc6aa398)
-
-## Home Page-FAQ 
-
-![turf2](https://github.com/Nandhukriss/Turf-booking-system/assets/103727372/5002da32-5656-4a52-8b26-019aba28a122)
-
-## Home Page 
-![turf3](https://github.com/Nandhukriss/Turf-booking-system/assets/103727372/879ab8ef-af93-4740-82c8-65796e73dd07)
-
-## Booking Success 
-![bookingpage1](https://github.com/Nandhukriss/Turf-booking-system/assets/103727372/a61fd066-3883-46ff-9e59-6a89d5933add)
-
-## Booking Failure 
-![bookingpage2](https://github.com/Nandhukriss/Turf-booking-system/assets/103727372/d1f76cf6-c437-415b-9a77-c61142f1f452)
